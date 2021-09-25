@@ -1,0 +1,689 @@
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            Common css start
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+img{
+    vertical-align: middle;
+}
+.clr{
+    clear: both;
+}
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+:root{
+    --hover: #44c0c2;
+    --dblack: #485460;
+    --lblack: #4e525d;
+}
+
+@font-face{
+    src: url(../font-family/Lobster_1_4.ttf);
+    font-family: lobster;
+}
+
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            Common css end
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            Menu part start
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+#menu_part{
+    height: 100px;
+}
+.flx{
+    display: flex;
+    flex-wrap: wrap;
+}
+.logo{
+    width: 20%;
+    line-height: 100px;
+}
+.logo a{
+    color: var(--hover);
+    font-size: 43px;
+    font-weight: 400;
+    font-family: lobster;
+}
+.main_menu{
+    width: 80%;
+    line-height: 100px;
+}
+.main_menu ul{
+    float: right;
+}
+.main_menu ul li{
+    float: left;
+    text-align: right;
+}
+.main_menu ul li a{
+    /*margin-left: 55px;
+    */padding: 0 27.5px;
+    font-size: 15px;
+    color: var(--lblack);
+    transition: all;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+.main_menu ul li a:hover {
+	color: var(--hover);
+	background-color: #f8f9fb;
+	box-shadow: inset 0 -3px 0 0 #44c0c2;
+}
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            Menu part end
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            Banner part start
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+#banner_part{
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    padding: 140px 0 148px;
+    text-align: center;
+}
+
+.banner_txt h1{
+    font-size: 63px;
+    color: #fff;
+    font-weight: 600;
+}
+.banner_txt p{
+    font-size: 23px;
+    color: #fff;
+    font-weight: 400;
+    line-height: 37px;
+    margin-top: 20px;
+    
+}
+.banner_txt p span{
+    display: block;
+}
+.banner_txt a{
+    padding: 22px 42px;
+    border: 3px solid #fff;
+    font-size: 26px;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    margin-top: 53px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+.banner_txt a:hover{
+    background-color: var(--hover);
+    border-color: var(--hover);
+    box-shadow: 0 3px 0 0 #485460;
+}
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            Banner part end
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxBanner
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            Service part start
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+#service_part{
+    padding: 100px 0;
+    text-align: center;
+}
+.ser_flx{
+    display: flex;
+    flex-wrap: wrap;
+}
+.service_col {
+	width: 21.41%;
+	margin-right: 56px;
+}
+.service_col i{
+    color: var(--hover);
+    font-size: 40px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    line-height: 100px;
+    border: 3px solid var(--hover);
+    text-align: center;
+    margin-bottom: 46px;
+}
+.service_col h4{
+    color: var(--lblack);
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 22px;
+}
+.service_col p{
+    color: var(--lblack);
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    line-height: 26px;
+    width: 246px;
+}
+.service_col a{
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: 400;
+    background-color: var(--hover);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+.service_col a:hover{
+    box-shadow: 0 3px 0 0 #4e525d;
+}
+.service_col i{
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+.service_col:hover i{
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+}
+.service_col:last-child{
+    margin-right: 0;
+}
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            Service part end
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            Portfolio part start
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+#portfolio_part{
+    background-color: #f1f1f1;
+    padding: 53px 0 100px;
+    
+}
+.common_head h2{
+    text-align: center;
+    color: var(--lblack);
+    font-size: 43px;
+    font-weight: 400;
+}
+.prot_flex{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 54px;
+}
+.port_col {
+	width: 31.62%;
+	margin-right: 30px;
+}
+.port_col img{
+    width: 100%;
+    max-width: 100%;
+}
+.port_col:last-child{
+    margin-right: 0;
+}
+.btn{
+    text-align: center;
+}
+.btn a{
+    color: #fff;
+    padding: 23px 40px;
+    font-size: 24px;
+    font-weight: 600;
+    background-color: var(--hover);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+.btn a:hover{
+    box-shadow: 0 3px 0 0 #4e525d;
+}
+.port_img{
+    position: relative;
+    overflow: hidden;
+	margin-bottom: 30px;
+}
+.port_img img{
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+.port_img:hover img{
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+
+.port_img .overlay {
+    position: absolute;
+    background-color: rgba(78, 82, 93, 0.5);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+.port_img:hover .overlay{
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+}
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            Portfolio part end
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            Team part start
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+#team_part{
+    padding: 95px 0 110px;
+    text-align: center;
+}
+.team_flx{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 140px;
+}
+.team_col {
+	width: 21.47%;
+	margin-right: 55px;
+}
+
+.team_col h4{
+    color: var(--lblack);
+    font-size: 22px;
+    font-weight: 400;
+    margin-top: 65px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+.team_col h6{
+    color: var(--lblack);
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 3px;
+}
+.team_col p{
+    width: 246px;
+    color: var(--lblack);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-top: 24px;
+}
+.team_col:last-child{
+    margin-right: 0;
+}
+.team_col:hover h4{
+    color: var(--hover);
+}
+
+
+.team_img{
+    position: relative;
+    overflow: hidden;
+}
+.team_col .overlay {
+    position: absolute;
+    left: 26px;
+    top: 0;
+    width: 200px;
+    height: 200px;
+    background-color: rgba(78, 82, 93, 0.5);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+.team_col:hover .overlay{
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+}
+.team_col .overlay i{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    color: red;
+    font-size: 85px;
+    font-weight: 800;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+}
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            Team part end
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            Buy part start
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+#buy_part{
+    background-color: #f1f1f1;
+    padding: 120px 0 100px;
+    text-align: center;
+}
+.buy_flex{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.buy_col {
+    width: 31.62%;
+    margin-right: 30px;
+    border: 1px solid #ecf0f1;
+}
+.buy_col:last-child{
+    margin-right: 0;
+}
+.buy_col h3{
+    color: #fff;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 75px;
+    background-color: #485460;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.buy_col h5{
+    color: #485460;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 68px;
+    background-color: #f8f9fb;
+    border-bottom: 1px solid #ecf0f1;
+}
+.buy_col ul li{
+    color: #8c9299;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 65px;
+    background-color: #fff;
+    border-bottom: 1px solid #ecf0f1;
+}
+.buy_col .buy_btn{
+    background-color: #f8f9fb;
+    line-height: 98px;
+}
+.buy_col .buy_btn a{
+    color: #fff;
+    font-size: 17px;
+    font-weight: 600;
+    background-color: #788492;
+    padding: 0 50px;
+    line-height: 40px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+.buy_col:hover h3,
+.buy_col:hover .buy_btn a{
+    background-color: var(--hover);
+}
+{
+    background-color: var(--hover);
+}
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            Buy part end
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            Review part start
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+#review_part{
+    padding: 147px 0 104px;
+    text-align: center;
+}
+/* .rev_col{
+    width: 50%;
+} */
+.rev_col p{
+    color: #4e525d;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    margin-top: 31px;
+}
+.rev_col p span{
+    display: block;
+}
+.rev_col h4{
+    color: #9a8faf;
+    font-size: 21px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 31px;
+}
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            Review part end
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            Contact part start
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+#contact_part{
+    padding: 107px 0 101px;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center!important;
+}
+.common_head h2{
+    color: #fff;
+    font-size: 42px;
+    font-weight: 400;
+}
+.con_flx{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 120px;
+}
+.con_col {
+	width: 47%;
+	margin-right: 68px;
+}
+.con_col h4{
+    color: #fff;
+    font-size: 24px;
+    font-weight: 400;
+}
+.con_col p{
+    width: 430px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    margin-top: 7px;
+    margin-bottom: 43px;
+}
+
+.con_col i{
+    color: #fff;
+    width: 42px;
+    height: 42px;
+    background-color: #3ec2f3;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    line-height: 42px;
+    text-align: center;
+    margin-right: 11px;
+}
+.con_col i:first-child{
+    background-color: #3b5997;
+}
+.con_col i:nth-child(1){
+    background-color: #e44c41;
+}
+.con_dt{
+    margin-top: 20px;
+}
+.con_dt ul li{
+    color: #bface2;
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 1px;
+}
+.con_col:last-child {
+	margin-right: 0;
+}
+.con_form .text-box {
+	background-color: #fff;
+	color: #c1c1c1;
+	border: none;
+	width: 47.41%;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 16px;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
+	margin-bottom: 30px;
+	margin-right: 24px;
+}
+.con_form .text-box:nth-child(2){
+    margin-right: 0;
+}
+.con_form textarea{
+    width: 100%;
+    background-color: #fff;
+	color: #c1c1c1;
+	border: none;
+    padding: 16px;
+    font-size: 16px;
+	font-weight: 400;
+	padding: 16px;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
+	margin-bottom: 30px;
+    height: 180px;
+}
+.con_form .send-btn{
+    float: right;
+    background-color: var(--hover);
+    color: #fff;
+    font-size: 22px;
+    font-weight: 400;
+    border: none;
+    padding: 14px;
+    width: 170px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    margin-right: 0;
+}
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            Contact part end
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+
+
+
+
+
+
+
